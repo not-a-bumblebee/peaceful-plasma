@@ -1,0 +1,153 @@
+---
+let selectedHoroscope = null;
+let horoscopes ={
+    "aries": "Aries",
+    "taurus": "Taurus",
+    "gemini": "Gemini",
+    "cancer": "Cancer",
+    "leo": "Leo",
+    "virgo": "Virgo",
+    "libra": "Libra",
+    "scorpio": "Scorpio",
+    "sagittarius": "Sagittarius",
+    "capricorn": "Capricorn",
+    "aquarius": "Aquarius",
+    "pisces": "Pisces"
+
+}
+
+
+const chooseHoroscope=(sign)=>{
+    console.log("Horoscope chosen");
+    
+    selectedHoroscope = sign
+}
+
+
+
+---
+
+<div id="sheet-block" class="flex justify-center mt-10">
+    <div id="sheet-container" class="bg-amber-300 w-1/3 h-96 p-5">
+        <h3 class="text-center font-semibold text-lg">Title</h3>
+        {selectedHoroscope && <article id="horoscope">{selectedHoroscope}</article>}
+    </div>
+</div>
+
+<div
+    id="horoscope-ui-container wraper-layer"
+    class="my-40 flex flex-col gap-y-24 bg-white bg-opacity-50 pb-12"
+>
+    <div id="rail bg-layer" class="bg-yellow-100 h-2 w-full relative flex">
+        <!-- <p>boobs</p> -->
+
+        <div
+            id="signs text-layer"
+            class="absolute -top-10 flex justify-around w-full text-2xl"
+        >
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+                onclick="{()=>chooseHoroscope('taurus')}"
+            >
+                taurus
+            </div>
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                gemini
+            </div>
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                aries
+            </div>
+        </div>
+    </div>
+
+    <div id="rail bg-layer" class="bg-yellow-100 h-2 w-full relative flex">
+        <div
+            id="signs text-layer"
+            class="absolute -top-10 flex justify-around w-full text-2xl"
+        >
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                cancer
+            </div>
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                leo
+            </div>
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                virgo
+            </div>
+        </div>
+    </div>
+
+    <div id="rail bg-layer" class="bg-yellow-100 h-2 w-full relative flex">
+        <div
+            id="signs text-layer"
+            class="absolute -top-10 flex justify-around w-full text-2xl"
+        >
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                libra
+            </div>
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                scorpio
+            </div>
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                sagi
+            </div>
+        </div>
+    </div>
+    <div id="rail bg-layer" class="bg-yellow-100 h-2 w-full relative flex">
+        <div
+            id="signs text-layer"
+            class="absolute -top-10 flex justify-around w-full text-2xl"
+        >
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                capr
+            </div>
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                aqua
+            </div>
+            <div
+                id="sign"
+                class="bg-orange-100 rounded-full w-20 h-20 flex justify-center items-center"
+            >
+                pisces
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    #sign {
+        cursor: pointer;
+        user-select: none;
+    }
+</style>

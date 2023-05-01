@@ -1,0 +1,65 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Header from "../components/Header.astro";
+import HoroscopeUI from "../components/HoroscopeUI";
+import Footer from "../components/Footer.astro";
+
+
+---
+
+<script></script>
+
+<Layout title="Welcome to Lacuna">
+	<main class="min-h-full root-container ">
+		<Header />
+		<Card
+			href="#"
+			title="Instructions:"
+			body="Choose the sign of your birth, and unleash your full potentiallity with satanic arcane knowledge written on a golden Yaneemango soul sheet with wisdom derived, filtered, and enriched from the ancient sumerian god of chaos and order: OpenAi !"
+		/>
+
+		<HoroscopeUI client:load />
+
+		<Footer />
+	</main>
+</Layout>
+
+<style is:global>
+	#Aries{
+		background-color: rgb(255, 179, 179);
+	}
+	#Taurus{
+		background-color: rgb(172, 224, 203);
+	}
+	#Gemini{
+		background-color: rgb(243, 239, 200);
+	}
+	#Cancer{
+		background-color: rgb(243, 243, 243);
+	}
+	#Leo{
+		background-color: rgb(255, 228, 140);
+	}
+	#Virgo{
+		background-color: rgb(179, 190, 255);
+	}
+	#Libra{
+		background-color: rgb(255, 199, 227);
+	}
+	#Scorpio{
+		background-color: rgb(219, 175, 175);
+	}
+	#Sagittarius{
+		background-color: rgb(220, 133, 247);
+	}
+	#Capricorn{
+		background-color: rgb(200, 255, 203);
+	}
+	#Aquarius{
+		background-color: rgb(164, 226, 255);
+	}
+	#Pisces{
+		background-color: rgb(137, 255, 245);
+	}
+</style>
