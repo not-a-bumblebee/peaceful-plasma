@@ -71,7 +71,7 @@ export default function Horoscopes() {
     }
 
     const fetchFortunes = async () => {
-        const fortunes = await (await fetch("http://localhost:4000/api/horoscopes")).json()
+        const fortunes = await (await fetch("https://lacuna-horoscopes.onrender.com/api/horoscopes")).json()
 
         setHoroscopes(eval(fortunes))
     }
